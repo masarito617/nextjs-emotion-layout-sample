@@ -11,7 +11,9 @@
     "prettier:check": "prettier --check src",
     "prettier:write": "prettier --write src",
     "check": "npm run lint:check && npm run prettier:check",
-    "format": "npm run lint:fix && npm run prettier:write"
+    "format": "npm run lint:fix && npm run prettier:write",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.3",
@@ -20,6 +22,15 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@emotion/babel-preset-css-prop": "^11.11.0",
+    "@storybook/addon-essentials": "^7.6.7",
+    "@storybook/addon-interactions": "^7.6.7",
+    "@storybook/addon-links": "^7.6.7",
+    "@storybook/addon-onboarding": "^1.0.10",
+    "@storybook/blocks": "^7.6.7",
+    "@storybook/nextjs": "^7.6.7",
+    "@storybook/react": "^7.6.7",
+    "@storybook/test": "^7.6.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -31,7 +42,9 @@
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.15",
     "prettier": "^3.1.1",
+    "storybook": "^7.6.7",
     "typescript": "^5",
     "typescript-eslint": "^0.0.1-alpha.0"
   }

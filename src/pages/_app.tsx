@@ -1,6 +1,6 @@
 import { Global, ThemeProvider, css } from '@emotion/react'
 import type { AppProps } from 'next/app'
-import { elekibear } from '@/themes/themes'
+import { elekibear } from '@/theme/theme'
 
 // グローバルのスタイル
 const styleGlobal = css`
