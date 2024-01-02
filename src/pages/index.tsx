@@ -1,3 +1,4 @@
+import CenterText from '@/components/CenterText'
 import Layout from '@/templates/Layout'
 
 /**
@@ -8,8 +9,8 @@ export default function Home() {
   return (
     <>
       <Layout
-        mainContent={<div>メイン</div>}
-        sideBarContent={<div>サイドバー</div>}
+        mainContent={<CenterText text="メイン" />}
+        sideBarContent={<CenterText text="サイドバー" />}
       />
     </>
   )
