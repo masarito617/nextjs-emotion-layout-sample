@@ -1,5 +1,6 @@
-import { Global, css } from '@emotion/react'
+import { Global, ThemeProvider, css } from '@emotion/react'
 import type { AppProps } from 'next/app'
+import { elekibear } from '@/themes/themes'
 
 // グローバルのスタイル
 const styleGlobal = css`
@@ -15,9 +16,9 @@ const styleGlobal = css`
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <ThemeProvider theme={elekibear}>
       <Global styles={styleGlobal} />
       <Component {...pageProps} />
-    </>
+    </ThemeProvider>
   )
 }

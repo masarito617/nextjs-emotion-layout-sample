@@ -1,9 +1,9 @@
-import { css } from '@emotion/react'
+import { Theme, css } from '@emotion/react'
 
-const styleCard = css`
-  background: black;
+const styleCard = (theme: Theme) => css`
+  background: ${theme.colors.primaryDarkGray};
   font-size: 40px;
-  color: white;
+  color: ${theme.colors.primaryYellow};
   width: 400px;
   height: 80px;
   margin: 80px;
@@ -13,9 +13,7 @@ const styleCard = css`
   align-items: center;
 `
 
-const Card = (props: {
-  text: string
-}) => {
+const Card = (props: { text: string }) => {
   return <div css={styleCard}>{props.text}</div>
 }
 export default Card
